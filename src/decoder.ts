@@ -42,7 +42,7 @@ export class Decoder {
 
     generateBarCode(linhaDigitavel: string) {
         let barCode = '';
-        barCode = linhaDigitavel.slice(0, 4) + this.isDvCodeValid(linhaDigitavel).toString() +  linhaDigitavel.slice(33, 37) + linhaDigitavel.slice(37, 47) + linhaDigitavel.slice(4, 9) + linhaDigitavel.slice(10, 20) + linhaDigitavel.slice(21, 31);
+        barCode = linhaDigitavel.slice(0, 4) + this.isDvCodeValid(linhaDigitavel).toString() + linhaDigitavel.slice(33, 47) + linhaDigitavel.slice(4, 9) + linhaDigitavel.slice(10, 20) + linhaDigitavel.slice(21, 31);
         return barCode;
     }
 
